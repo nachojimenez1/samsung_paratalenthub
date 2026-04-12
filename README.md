@@ -36,6 +36,24 @@ El sistema opera bajo un flujo de 4 etapas:
 3. **Reranking por Reglas Críticas:** Filtrado lógico basado en Flags médicos (Visual, Intelectual, Físico) y consistencia anatómica.
 4. **Validación Humana:** Presentación jerarquizada de los 9 mejores perfiles para la decisión final del inspector.
 
+## 📊 Módulo de Análisis de Datos (Data Science & EDA)
+
+Como base del sistema, se realizó un análisis exploratorio de datos (**EDA**) para comprender el perfil de los aspirantes y validar la viabilidad de los modelos predictivos.
+
+### Objetivo
+- Analizar la distribución de perfiles y clasificaciones.
+- Identificar variables clave para la detección de talento.
+
+### Procesamiento
+- Limpieza e imputación de valores nulos.  
+- Escalado de variables numéricas.  
+- Codificación de variables categóricas.  
+
+Este análisis ha permitido:
+- Definir las variables más relevantes para los modelos (RF y MLP).  
+- Validar el enfoque de detección de talento.  
+- Establecer la base para futuras mejoras con datos reales del CPE.  
+
 ## 🧪 Módulo de Inteligencia Artificial Predictiva (Talent Detection)
 
 Más allá de la clasificación administrativa, **ParaTalent Hub** integra un motor de análisis avanzado para la detección de potencial deportivo. Este módulo procesa métricas biométricas y de rendimiento para sugerir las disciplinas donde el atleta tiene mayor probabilidad de éxito. Debido a la falta de datos objetivos para deportistas paralímpicos, se ha realizado una muestra con un dataset llamado "BodyPerformance". Se trata de datos recogidos por la entidad "Korea Sports Promotion Foundation".
