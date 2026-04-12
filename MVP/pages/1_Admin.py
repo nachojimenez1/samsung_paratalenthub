@@ -57,7 +57,7 @@ if not check_password():
 def analizar_perfil_avanzado(datos_completos, vectorstore):
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     
-    # 1. Recuperación de todos los checks originales (Mantenemos tu lógica exacta)
+    # 1. Recuperación de todos los checks originales
     checks = []
     if datos_completos.get('D_Visual'): checks.append("Visual")
     if datos_completos.get('D_Intelectual'): checks.append("Intellectual")
@@ -67,7 +67,7 @@ def analizar_perfil_avanzado(datos_completos, vectorstore):
     # String detallado para que el LLM entienda la patología exacta
     info_medica = ", ".join(checks) if checks else "Physical impairment"
 
-    # 2. Traducción técnica (Usando toda la info de los checks)
+    # 2. Traducción técnica
     analisis_previo = llm.invoke(f"""
     Analyze this athlete file for LEXI classification:
     - Description: {datos_completos.get('Descripcion', '')}
