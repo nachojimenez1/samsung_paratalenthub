@@ -7,6 +7,8 @@
 ![LangChain](https://img.shields.io/badge/Orchestration-LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![FAISS](https://img.shields.io/badge/Vector_DB-FAISS-04A6E1?style=for-the-badge)
 ![OpenAI](https://img.shields.io/badge/AI-GPT--4o--mini-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/Deep_Learning-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 
 ---
 
@@ -33,6 +35,30 @@ El sistema opera bajo un flujo de 4 etapas:
 2. **Recuperación (Retrieval):** Búsqueda de los 15 candidatos más cercanos en el espacio vectorial de 1536 dimensiones.
 3. **Reranking por Reglas Críticas:** Filtrado lógico basado en Flags médicos (Visual, Intelectual, Físico) y consistencia anatómica.
 4. **Validación Humana:** Presentación jerarquizada de los 9 mejores perfiles para la decisión final del inspector.
+
+## 🧪 Módulo de Inteligencia Artificial Predictiva (Talent Detection)
+
+Más allá de la clasificación administrativa, **ParaTalent Hub** integra un motor de análisis avanzado para la detección de potencial deportivo. Este módulo procesa métricas biométricas y de rendimiento para sugerir las disciplinas donde el atleta tiene mayor probabilidad de éxito.
+
+### 🤖 Modelos Implementados
+
+Para este proceso de triaje deportivo, se han desarrollado y comparado dos arquitecturas distintas:
+
+* **Random Forest Classifier (Machine Learning):**
+    * **Propósito:** Proporcionar un modelo altamente interpretable.
+    * **Feature Importance:** Nos permite identificar qué variables físicas (fuerza, rango de movimiento, coordinación) son determinantes para cada deporte.
+    * **Robustez:** Ideal para manejar datos tabulares y evitar el sobreajuste (overfitting).
+
+* **MLP - Multi-Layer Perceptron (Deep Learning):**
+    * **Propósito:** Modelar relaciones no lineales complejas entre la discapacidad y el rendimiento.
+    * **Arquitectura:** Una red neuronal densa con múltiples capas ocultas que procesa los datos del atleta para generar un **Score de Talento**.
+    * **Generalización:** Capaz de encontrar patrones sutiles en los datos históricos que los modelos lineales ignoran.
+
+### 📈 Flujo de Decisión Predictiva
+
+1.  **Entrada:** Datos físicos y resultados de pruebas de esfuerzo.
+2.  **Inferencia:** Procesamiento paralelo por ambos modelos (RF y MLP).
+3.  **Salida:** Posible futuro Talento.
 
 ## 🔧 Instalación y Configuración
 
