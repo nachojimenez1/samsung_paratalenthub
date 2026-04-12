@@ -15,7 +15,7 @@ AIRTABLE_KEY = os.getenv("AIRTABLE_API_KEY", "").replace('"', '').strip()
 BASE_ID = os.getenv("AIRTABLE_BASE_ID", "").replace('"', '').strip()
 TABLE_NAME = os.getenv("AIRTABLE_TABLE_NAME", "").replace('"', '').strip()
 
-# --- NUEVOS ESTADOS PARA PAGINACIÓN ---
+# --- ESTADOS PARA PAGINACIÓN ---
 if 'candidatos' not in st.session_state:
     st.session_state.candidatos = []
 if 'img_seleccionada' not in st.session_state:
@@ -35,7 +35,7 @@ def cargar_recursos():
 
 vectorstore, mapa_deportes = cargar_recursos()
 
-# 2. SEGURIDAD (Se mantiene igual)
+# 2. SEGURIDAD
 def check_password():
     if "password_correct" not in st.session_state:
         st.title("🔐 Acceso Restringido")
