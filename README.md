@@ -38,7 +38,7 @@ El sistema opera bajo un flujo de 4 etapas:
 
 ## 🧪 Módulo de Inteligencia Artificial Predictiva (Talent Detection)
 
-Más allá de la clasificación administrativa, **ParaTalent Hub** integra un motor de análisis avanzado para la detección de potencial deportivo. Este módulo procesa métricas biométricas y de rendimiento para sugerir las disciplinas donde el atleta tiene mayor probabilidad de éxito. Debido a la falta de datos objetivos para deportistas paralímpicos, se ha realizado una muestra con un dataset llamado "BodyPerformance". Se puede encontrar el dataset en el siguiente enlace: "https://www.kaggle.com/datasets/kukuroo3/body-performance-data". Se trata de datos recogidos por la entidad "Korea Sports Promotion Foundation".
+Más allá de la clasificación administrativa, **ParaTalent Hub** integra un motor de análisis avanzado para la detección de potencial deportivo. Este módulo procesa métricas biométricas y de rendimiento para sugerir las disciplinas donde el atleta tiene mayor probabilidad de éxito. Debido a la falta de datos objetivos para deportistas paralímpicos, se ha realizado una muestra con un dataset llamado "BodyPerformance". Se trata de datos recogidos por la entidad "Korea Sports Promotion Foundation".
 
 ### 🤖 Modelos Implementados
 
