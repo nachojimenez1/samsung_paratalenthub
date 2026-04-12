@@ -40,11 +40,11 @@ El sistema opera bajo un flujo de 4 etapas:
 
 Como base del sistema, se realizó un análisis exploratorio de datos (**EDA**) para comprender el perfil de los aspirantes y validar la viabilidad de los modelos predictivos.
 
-### Objetivo
+### 🎯 Objetivo
 - Analizar la distribución de perfiles y clasificaciones.
 - Identificar variables clave para la detección de talento.
 
-### Procesamiento
+### 🧹 Procesamiento
 - Limpieza e imputación de valores nulos.  
 - Escalado de variables numéricas.  
 - Codificación de variables categóricas.  
