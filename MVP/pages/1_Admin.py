@@ -126,7 +126,7 @@ def analizar_perfil_avanzado(datos_completos, vectorstore):
         print(f"Error en Reranking: {e}")
         return docs_k15[:9]
 
-# 4. INTERFAZ DE TRABAJO (Mantenemos tu diseño)
+# 4. INTERFAZ DE TRABAJO
 st.title("🕵️ Panel de Revisión Técnica")
 
 try:
@@ -209,7 +209,7 @@ if st.session_state.candidatos:
                 st.session_state.pagina_actual += 1
                 st.rerun()
 
-# 6. GUARDADO FINAL (Se mantiene igual)
+# 6. GUARDADO FINAL
 if st.session_state.img_seleccionada:
     img = st.session_state.img_seleccionada
     deportes = mapa_deportes.get(img, [])
